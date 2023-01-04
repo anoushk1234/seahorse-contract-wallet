@@ -1,0 +1,15 @@
+[features]
+seeds = true
+skip-lint = false
+[programs.localnet]
+seahourse_contract_wallet = "H66wCfRMbgEZaRURnnJw42B3NvWsJZMH8L93TDSyEdaD"
+
+[registry]
+url = "https://api.apr.dev"
+
+[provider]
+cluster = "Localnet"
+wallet = "/Users/anoushkkharangate/.config/solana/id.json"
+
+[scripts]
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"

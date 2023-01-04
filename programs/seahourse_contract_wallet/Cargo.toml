@@ -1,0 +1,21 @@
+[package]
+description = "Created with Anchor"
+edition = "2021"
+name = "seahourse_contract_wallet"
+version = "0.1.0"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+name = "seahourse_contract_wallet"
+
+[features]
+cpi = ["no-entrypoint"]
+default = []
+no-entrypoint = []
+no-idl = []
+no-log-ix-name = []
+
+[dependencies]
+anchor-lang = "0.25.0"
+anchor-spl = "0.25.0"
+pyth-sdk-solana = {version = "0.6.1", optional = true}
